@@ -1,27 +1,20 @@
 <!DOCTYPE html>
-
 <html>
-    <head>
+    <head th:replace="plantillas/base ::head"> 
         <title>CARNERO TUNING CR</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="estilo.css">
+        <link rel="stylesheet" href="styles/estilo.css" type="text/css"/>
     </head>
     <body>
-        <ul class="Menu">
-            <li> <a href="#">INICIO</a></li>
-            <li> <a href="#">SERVICIOS</a></li>
-            <li> <a href="#">PRODUCTOS</a></li>
-            <li> <a href="#">CONTACTOS</a></li>
-            <li> <a href="#">SOPORTE</a></li>
-            <li> <a href="#">COMENTARIOS</a></li>  
-        </ul>
-        
-        
-        
-        
-        
-        <footer>
-             
-        </footer>    
+        <nav th:replace="plantillas/base ::nav"></nav>
+        <br>
+        <div class="text-center">
+            <h3>Bienvenido a Carnero Tunning CR</h3>
+            <h5>La mejor opcion para el mantenimiento y configuracion de su vehiculo</h5>
+        </div>
+        <br>
+        <div th:replace="plantillas/base ::images"></div>
+        <footer th:replace="plantillas/base ::footer"></footer>
     </body>
 </html>
