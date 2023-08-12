@@ -4,11 +4,9 @@ import jakarta.persistence.*;
 import java.io.Serializable;
 import java.util.List;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 @Data
 @Entity
-@NoArgsConstructor // Agrega esta anotación para generar un constructor por defecto
 @Table(name="categoria")
 public class Categoria implements Serializable {
     
@@ -22,11 +20,11 @@ public class Categoria implements Serializable {
     private String rutaImagen;
     private boolean activo;
 
-   /* @OneToMany
+    @OneToMany
     @JoinColumn(name="id_categoria")
     List<Producto> productos;
     public Categoria() {
-    }*/
+    }
 
     public Categoria(String categoria, boolean activo) {
         this.descripcion = categoria;
