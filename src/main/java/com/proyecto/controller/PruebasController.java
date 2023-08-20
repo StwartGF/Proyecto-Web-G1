@@ -1,4 +1,5 @@
 package com.proyecto.controller;
+
 import com.proyecto.domain.Categoria;
 import com.proyecto.service.CategoriaService;
 import org.springframework.beans.factory.annotation.Autowired;
